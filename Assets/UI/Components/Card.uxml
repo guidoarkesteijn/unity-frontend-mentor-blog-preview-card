@@ -1,0 +1,50 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Stylesheets/tailwind.uss?fileID=7433441132597879392&amp;guid=19bf3fa67c268cc40b6a7458237d388a&amp;type=3#tailwind" />
+    <engine:VisualElement data-source="project://database/Assets/Data/Cards/Card.asset?fileID=11400000&amp;guid=7a8dee9c351ac194fa4370a6879fa9bd&amp;type=2#Card" class="bg-background border-foreground rounded-2xl border grow p-6 m-1 hover-cursor-hand hover-scale-110 transition-all" style="border-bottom-width: 8px; border-right-width: 8px;">
+        <engine:VisualElement picking-mode="Ignore" class="h-48 rounded-xl overflow-hidden mb-6">
+            <engine:VisualElement picking-mode="Ignore" class="grow" style="-unity-background-scale-mode: scale-and-crop;">
+                <Bindings>
+                    <engine:DataBinding property="style.backgroundImage" data-source-path="Image" binding-mode="ToTarget" />
+                </Bindings>
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement picking-mode="Ignore" class="flex-row mb-3">
+            <engine:Label picking-mode="Ignore" class="px-3 rounded text-center text-sm py-2">
+                <Bindings>
+                    <engine:DataBinding property="style.backgroundColor" data-source-path="Tags[0].color" binding-mode="ToTarget" />
+                    <engine:DataBinding property="text" data-source-path="Tags[0].tag" binding-mode="ToTarget" />
+                </Bindings>
+            </engine:Label>
+        </engine:VisualElement>
+        <engine:VisualElement picking-mode="Ignore" class="flex-row text-sm mb-3">
+            <engine:Label text="Published" picking-mode="Ignore" class="mr-1" />
+            <engine:Label picking-mode="Ignore" class="whitespace-normal">
+                <Bindings>
+                    <engine:DataBinding property="text" data-source-path="DateTime" binding-mode="ToTarget" />
+                </Bindings>
+            </engine:Label>
+        </engine:VisualElement>
+        <engine:Label picking-mode="Ignore" class="whitespace-normal text-2xl mb-3 transition-all">
+            <Bindings>
+                <engine:DataBinding property="text" data-source-path="Title" binding-mode="ToTarget" />
+            </Bindings>
+        </engine:Label>
+        <engine:Label picking-mode="Ignore" class="whitespace-normal text-muted-foreground grow mb-6">
+            <Bindings>
+                <engine:DataBinding property="text" data-source-path="Description" binding-mode="ToTarget" />
+            </Bindings>
+        </engine:Label>
+        <engine:VisualElement picking-mode="Ignore" class="flex-row items-center">
+            <engine:VisualElement picking-mode="Ignore" class="w-8 h-8 mr-1">
+                <Bindings>
+                    <engine:DataBinding property="style.backgroundImage" data-source-path="Author.avatar" binding-mode="ToTarget" />
+                </Bindings>
+            </engine:VisualElement>
+            <engine:Label picking-mode="Ignore">
+                <Bindings>
+                    <engine:DataBinding property="text" data-source-path="Author.authorName" binding-mode="ToTarget" />
+                </Bindings>
+            </engine:Label>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

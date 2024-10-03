@@ -1,0 +1,23 @@
+@import url("unity-theme://default");
+
+:root {
+	--popup-background: rgba(0,0,0,.8);
+	color: var(--foreground);
+	-unity-font-definition: url("project://database/Assets/Fonts/Figtree-SemiBold SDF.asset");
+	font-size: 16px;
+}
+
+.hover-cursor-hand:hover {
+    cursor: url("project://database/Assets/Cursors/CursorHand.png?fileID=2800000&guid=f3c815d95da3a483385620d7bd8fc545&type=3#CursorHand");
+}
+
+.hover-cursor-hand:hover > .text-2xl {
+    color: var(--primary);
+}
+
+.unity-label {
+    flex: 0 0 auto;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}

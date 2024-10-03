@@ -1,0 +1,7 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="Card" src="project://database/Assets/UI/Components/Card.uxml?fileID=9197481963319205126&amp;guid=f2eaf7d6a087c4947b7e32a06edb2329&amp;type=3#Card" />
+    <Style src="project://database/Assets/UI/Stylesheets/tailwind.uss?fileID=7433441132597879392&amp;guid=19bf3fa67c268cc40b6a7458237d388a&amp;type=3#tailwind" />
+    <engine:VisualElement class="grow justify-center items-center">
+        <engine:Instance template="Card" name="Card" class="w-96" />
+    </engine:VisualElement>
+</engine:UXML>

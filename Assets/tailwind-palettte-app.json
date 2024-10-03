@@ -1,0 +1,89 @@
+{
+  "colors": [
+    {
+      "paletteName": "primary",
+      "swatches": [
+        {
+          "color": "var(--primary)"
+        },
+        {
+          "name": "hover",
+          "color": "var(--primary-hover)"
+        }
+      ]
+    },
+    {
+      "paletteName": "secondary",
+      "swatches": [
+        {
+          "color": "var(--secondary)"
+        },
+        {
+          "name": "hover",
+          "color": "var(--secondary-hover)"
+        }
+      ]
+    },
+    {
+      "paletteName": "destructive",
+      "swatches": [
+        {
+          "color": "var(--destructive)"
+        },
+        {
+          "name": "hover",
+          "color": "var(--destructive-hover)"
+        }
+      ]
+    },
+    {
+      "paletteName": "foreground",
+      "swatches": [
+        {
+          "color": "var(--foreground)"
+        }
+      ]
+    },
+    {
+      "paletteName": "background",
+      "swatches": [
+        {
+          "color": "var(--background)"
+        }
+      ]
+    },
+    {
+      "paletteName": "muted",
+      "swatches": [
+        {
+          "color": "var(--muted)"
+        },
+        {
+          "name": "foreground",
+          "color": "var(--muted-foreground)"
+        }
+      ]
+    },
+    {
+      "paletteName": "card",
+      "swatches": [
+        {
+          "color": "var(--card)"
+        },
+        {
+          "name": "foreground",
+          "color": "var(--card-foreground)"
+        }
+      ]
+    },
+    {
+      "paletteName": "popup",
+      "swatches": [
+        {
+          "name": "background",
+          "color": "var(--popup-background)"
+        }
+      ]
+    }
+  ]
+}

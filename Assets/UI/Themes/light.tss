@@ -1,0 +1,28 @@
+@import url("unity-theme://default");
+@import url("project://database/Assets/UI/Stylesheets/globals.uss");
+
+:root {
+    --background: rgb(255, 255, 255);
+    --foreground: rgb(17, 17, 17);
+    --card: rgb(255, 255, 255);
+    --card-foreground: rgb(17, 17, 17);
+    --popover: rgb(255, 255, 255);
+    --popover-foreground: rgb(17, 17, 17);
+    --primary: rgb(244, 208, 78);
+    --primary-hover: rgba(244, 208, 78, 0.9);
+    --primary-foreground: rgb(250, 252, 255);
+    --secondary: rgb(244 244 245);
+    --secondary-hover: rgba(244, 244, 245, 0.6);
+    --secondary-foreground: rgb(11, 11, 12);
+    --muted: rgb(241, 245, 249);
+    --muted-foreground: rgb(107, 107, 107);
+    --accent: rgb(199, 58, 15);
+    --accent-foreground:rgb(252, 249, 247);
+    --destructive: rgb(220 38 38);
+    --destructive-hover: rgba(220, 38, 38, 0.9);
+    --destructive-foreground: rgb(250, 252, 255);
+    --border: rgb(234, 238, 245);
+    --input: rgb(234, 238, 245);
+    --ring: rgb(42, 126, 223);
+    --radius: 8px;
+}
