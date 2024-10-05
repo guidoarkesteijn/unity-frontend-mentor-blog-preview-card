@@ -1,10 +1,18 @@
 ﻿using UnityEngine;
 using UnityEngine.UIElements;
 
-public class Scren : MonoBehaviour
+public class Screen : MonoBehaviour
 {
+    [SerializeField] private PanelSettings panelSettings;
+    [SerializeField] private ThemeStyleSheet darkTheme;
+    [SerializeField] private ThemeStyleSheet lightTheme;
+
+    private bool isDarkTheme;
+
     protected void Start()
     {
+        isDarkTheme = panelSettings.themeStyleSheet == darkTheme;
+
         VisualElement card = GetComponent<UIDocument>().rootVisualElement.Q("Card");
 
         card.RegisterCallback<ClickEvent>(OnCardClickEvent);
@@ -12,6 +20,8 @@ public class Scren : MonoBehaviour
 
     private void OnCardClickEvent(ClickEvent clickEvent)
     {
-        Debug.LogWarning("Clicked: " + clickEvent.target);
+        isDarkTheme = !isDarkTheme;
+
+        panelSettings.themeStyleSheet = isDarkTheme ? darkTheme : lightTheme;
     }
 }

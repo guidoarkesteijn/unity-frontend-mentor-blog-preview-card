@@ -3,5 +3,6 @@
     <Style src="project://database/Assets/UI/Stylesheets/tailwind.uss?fileID=7433441132597879392&amp;guid=19bf3fa67c268cc40b6a7458237d388a&amp;type=3#tailwind" />
     <engine:VisualElement class="grow justify-center items-center">
         <engine:Instance template="Card" name="Card" class="w-96" />
+        <engine:Label text="Click the card to switch to dark/light theme." class="bg-background rounded p-1 text-lg" style="position: absolute; top: 5px;" />
     </engine:VisualElement>
 </engine:UXML>
