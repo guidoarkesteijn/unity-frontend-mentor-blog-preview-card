@@ -37,7 +37,6 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 ### Todo
 
 - Multiple Cards
-- Multiple Tags
 - ...
 
 ### Useful resources

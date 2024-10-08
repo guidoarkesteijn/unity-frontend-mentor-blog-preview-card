@@ -1,6 +1,6 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/Stylesheets/tailwind.uss?fileID=7433441132597879392&amp;guid=19bf3fa67c268cc40b6a7458237d388a&amp;type=3#tailwind" />
-    <engine:VisualElement data-source="project://database/Assets/Data/Cards/Card.asset?fileID=11400000&amp;guid=7a8dee9c351ac194fa4370a6879fa9bd&amp;type=2#Card" class="bg-background border-foreground rounded-2xl border grow p-6 m-1 hover-cursor-hand hover-scale-110 transition-all" style="border-bottom-width: 8px; border-right-width: 8px;">
+    <engine:VisualElement class="bg-background border-foreground rounded-2xl border grow p-6 m-1 hover-cursor-hand hover-scale-110 transition-all" style="border-bottom-width: 8px; border-right-width: 8px;">
         <engine:VisualElement picking-mode="Ignore" class="h-48 rounded-xl overflow-hidden mb-6">
             <engine:VisualElement picking-mode="Ignore" class="grow" style="-unity-background-scale-mode: scale-and-crop;">
                 <Bindings>
@@ -8,11 +8,41 @@
                 </Bindings>
             </engine:VisualElement>
         </engine:VisualElement>
-        <engine:VisualElement picking-mode="Ignore" class="flex-row mb-3">
-            <engine:Label picking-mode="Ignore" class="px-3 rounded text-center text-sm py-2">
+        <engine:VisualElement picking-mode="Ignore" class="flex-row mb-3 flex-wrap">
+            <engine:Label picking-mode="Ignore" class="px-3 rounded text-center text-sm py-2 mr-2 mb-2 text-black font-bold">
                 <Bindings>
                     <engine:DataBinding property="style.backgroundColor" data-source-path="Tags[0].color" binding-mode="ToTarget" />
                     <engine:DataBinding property="text" data-source-path="Tags[0].tag" binding-mode="ToTarget" />
+                </Bindings>
+            </engine:Label>
+            <engine:Label picking-mode="Ignore" class="px-3 rounded text-center text-sm py-2 mr-2 mb-2 text-black font-bold">
+                <Bindings>
+                    <engine:DataBinding property="style.backgroundColor" data-source-path="Tags[1].color" binding-mode="ToTarget" />
+                    <engine:DataBinding property="text" data-source-path="Tags[1].tag" binding-mode="ToTarget" />
+                </Bindings>
+            </engine:Label>
+            <engine:Label picking-mode="Ignore" class="px-3 rounded text-center text-sm py-2 mr-2 mb-2 text-black font-bold">
+                <Bindings>
+                    <engine:DataBinding property="style.backgroundColor" data-source-path="Tags[2].color" binding-mode="ToTarget" />
+                    <engine:DataBinding property="text" data-source-path="Tags[2].tag" binding-mode="ToTarget" />
+                </Bindings>
+            </engine:Label>
+            <engine:Label picking-mode="Ignore" class="px-3 rounded text-center text-sm py-2 mr-2 mb-2 text-black font-bold">
+                <Bindings>
+                    <engine:DataBinding property="style.backgroundColor" data-source-path="Tags[3].color" binding-mode="ToTarget" />
+                    <engine:DataBinding property="text" data-source-path="Tags[3].tag" binding-mode="ToTarget" />
+                </Bindings>
+            </engine:Label>
+            <engine:Label picking-mode="Ignore" class="px-3 rounded text-center text-sm py-2 mr-2 mb-2 text-black font-bold">
+                <Bindings>
+                    <engine:DataBinding property="style.backgroundColor" data-source-path="Tags[4].color" binding-mode="ToTarget" />
+                    <engine:DataBinding property="text" data-source-path="Tags[4].tag" binding-mode="ToTarget" />
+                </Bindings>
+            </engine:Label>
+            <engine:Label picking-mode="Ignore" class="px-3 rounded text-center text-sm py-2 mr-2 mb-2 text-black font-bold">
+                <Bindings>
+                    <engine:DataBinding property="style.backgroundColor" data-source-path="Tags[5].color" binding-mode="ToTarget" />
+                    <engine:DataBinding property="text" data-source-path="Tags[5].tag" binding-mode="ToTarget" />
                 </Bindings>
             </engine:Label>
         </engine:VisualElement>

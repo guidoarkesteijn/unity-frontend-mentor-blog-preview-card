@@ -2,7 +2,7 @@
     <engine:Template name="Card" src="project://database/Assets/UI/Components/Card.uxml?fileID=9197481963319205126&amp;guid=f2eaf7d6a087c4947b7e32a06edb2329&amp;type=3#Card" />
     <Style src="project://database/Assets/UI/Stylesheets/tailwind.uss?fileID=7433441132597879392&amp;guid=19bf3fa67c268cc40b6a7458237d388a&amp;type=3#tailwind" />
     <engine:VisualElement class="grow justify-center items-center">
-        <engine:Instance template="Card" name="Card" class="w-96" />
+        <engine:Instance template="Card" name="Card" data-source="project://database/Assets/Data/Cards/Card.asset?fileID=11400000&amp;guid=7a8dee9c351ac194fa4370a6879fa9bd&amp;type=2#Card" class="w-96" />
         <engine:Label text="Click the card to switch to dark/light theme." class="bg-background rounded p-1 text-lg" style="position: absolute; top: 5px;" />
     </engine:VisualElement>
 </engine:UXML>
