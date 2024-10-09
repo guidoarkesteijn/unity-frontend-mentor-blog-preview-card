@@ -1,7 +1,7 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/Stylesheets/tailwind.uss?fileID=7433441132597879392&amp;guid=19bf3fa67c268cc40b6a7458237d388a&amp;type=3#tailwind" />
     <engine:VisualElement class="bg-background border-foreground rounded-2xl border grow p-6 m-1 hover-cursor-hand hover-scale-110 transition-all" style="border-bottom-width: 8px; border-right-width: 8px;">
-        <engine:VisualElement picking-mode="Ignore" class="h-48 rounded-xl overflow-hidden mb-6">
+        <engine:VisualElement picking-mode="Ignore" class="h-44 rounded-xl overflow-hidden mb-6">
             <engine:VisualElement picking-mode="Ignore" class="grow" style="-unity-background-scale-mode: scale-and-crop;">
                 <Bindings>
                     <engine:DataBinding property="style.backgroundImage" data-source-path="Image" binding-mode="ToTarget" />
