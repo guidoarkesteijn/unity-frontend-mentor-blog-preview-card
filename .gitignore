@@ -65,6 +65,10 @@ sysinfo.txt
 *.unitypackage
 *.app
 
+# Ignore temporaries from GameCI
+/[Aa]rtifacts/
+/[Cc]odeCoverage/
+
 # Crashlytics generated file
 crashlytics-build.properties
 
