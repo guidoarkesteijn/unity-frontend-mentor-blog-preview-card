@@ -18,6 +18,7 @@ jobs:
           - Android # Build an Android .apk standalone app.
           - WebGL # WebGL.
     steps:
+      - uses: jlumbroso/free-disk-space@v1.3.1
       - uses: actions/checkout@v4.1.1
         with:
           fetch-depth: 0
